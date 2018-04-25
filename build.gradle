@@ -6,6 +6,8 @@ jbake {
     clearCache = true
 }
 
+defaultTasks 'jbake'
+
 task publish(type: GradleBuild) {           
     buildFile = 'publish.gradle'
     tasks = ['gitPublishPush']
